@@ -1,0 +1,14 @@
+
+pip install openmim
+mim install mmdet==2.22.0
+
+# if there is no mmdetection code in your workspace, 
+# then you should clone repository of mmdetection to your workspace.
+git clone https://github.com/open-mmlab/mmdetection.git
+
+# download config and checkpoint files
+mim download mmdet --config faster_rcnn_r50_fpn_1x_coco --dest ./checkpoint/
+
+1. pip uninstall mmdet
+2. pip install openmim
+3. mim install mmdet
